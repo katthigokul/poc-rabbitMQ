@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ProducerService {
+
+
     /**
      * Constructor based Dependency injection to inject AmqpTemplate here
      */

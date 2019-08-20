@@ -1,7 +1,6 @@
 package com.stackroute.controller;
 
-import com.stackroute.domain.Movie;
-import com.stackroute.domain.User;
+
 import com.stackroute.service.ProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,8 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * RestController annotation is used to create Restful web services using Spring MVC
+ */
 @RestController
-@RequestMapping(value = "api/v1/")
+
+/**
+ * RequestMapping annotation maps HTTP requests to handler methods
+ */
+@RequestMapping(value = "api/v1")
 public class ProducerController {
 
     @Autowired
