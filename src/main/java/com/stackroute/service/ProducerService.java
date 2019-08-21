@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+
 /**
  * @Service indicates annotated class is a service which hold business logic in the Service layer
  */
@@ -32,3 +33,4 @@ public class ProducerService {
         amqpTemplate.convertAndSend(exchange, routingKey, msg);
     }
 }
+

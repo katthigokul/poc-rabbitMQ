@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+
 /**
  * RestController annotation is used to create Restful web services using Spring MVC
  */
@@ -36,4 +37,5 @@ public class ProducerController {
         producerService.produceMsg(msg);
         return "Msg Sent Successfully ";
     }
+
 }
